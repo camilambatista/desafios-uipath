@@ -12,29 +12,21 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "Banco&Sequence_8",
+        "PrimeiraVez&Flowchart_1",
+        "Extrato_Bancario&Sequence_1",
         "Navegador&Sequence_1",
-        "Lista&Sequence_1"
+        "NewTransaction&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "dados/Dados_ExtraiPlanilha.xaml",
+      "Path": "site/Site_Abrir_Navegador.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
-        "out_Lista"
-      ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "sites/inputForms/sites_inputforms_abrir.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [
-        "in_Lista",
         "out_Navegador",
         "in_URL"
       ],
@@ -42,58 +34,41 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "sites/inputForms/sites_inputforms_fechar.xaml",
+      "Path": "site/Site_Fechar_Navegador.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
-        "out_Navegador",
         "in_Navegador"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "sites/inputForms/sites_inputforms_percorredados.xaml",
+      "Path": "site/Site_Extrair_Extrato_Bancario.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
-        "in_Lista"
+        "out_Extrato_Bancario",
+        "in_Navegador"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "sites/inputForms/sites_inputforms_entradadados.xaml",
+      "Path": "banco/Banco_Abrir_Aplicativo_Banco.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
-        "in_Solicitacao_Credito",
-        "in_Pais",
-        "in_DataNascimento",
-        "in_UltimoNome",
-        "in_ID",
-        "in_PrimeiroNome"
+        "out_Banco"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "testes.xaml",
+      "Path": "banco/Banco_Fechar_Aplicativo_Banco.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "sites/kill process.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "variable1&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": [
-        "in_process"
-      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
