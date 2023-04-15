@@ -12,10 +12,13 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "saldoAPP&Flowchart_1",
+        "saldoWeb&Flowchart_1",
+        "contador&Flowchart_1",
+        "Extrato_Bancario&Flowchart_1",
+        "Navegador&Flowchart_1",
         "Banco&Sequence_8",
         "PrimeiraVez&Flowchart_1",
-        "Extrato_Bancario&Sequence_1",
-        "Navegador&Sequence_1",
         "NewTransaction&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [],
@@ -69,6 +72,16 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "banco/Banco_Insere_Registros.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_CurrentRow"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
