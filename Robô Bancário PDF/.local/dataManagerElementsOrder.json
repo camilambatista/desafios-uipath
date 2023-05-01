@@ -1,0 +1,52 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "PDF/PDF_Abrir_Acrobat.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_PDF"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "NewTransaction&Flowchart_1",
+        "PrimeiraVez&Flowchart_1",
+        "Navegador&Flowchart_1",
+        "Extrato_Bancario&Flowchart_1",
+        "contador&Flowchart_1",
+        "saldoWeb&Flowchart_1",
+        "saldoAPP&Flowchart_1",
+        "Banco&Sequence_8"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "PDF/PDF_Extrair_Extrato_Bancario.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "AvlAvview&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Navegador",
+        "out_Extrato_Bancario"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

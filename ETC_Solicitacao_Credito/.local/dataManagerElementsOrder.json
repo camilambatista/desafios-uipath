@@ -1,0 +1,148 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "1. Extract/Extract_Extrair_Dados.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_CSV",
+        "out_Solicitacao"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "navegador&Sequence_1",
+        "tabela_solicitacao&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "2. Transform/Transform_Transformar_Dados.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "pais&Sequence_2",
+        "dataSolicitacaoCredito&Sequence_2",
+        "dataNascimento&Sequence_2",
+        "ultimoNome&Sequence_2",
+        "primeiroNome&Sequence_2",
+        "ID&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Navegador",
+        "in_Tabela_Solicitacao"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "2. Transform/Transform_Tratamento_ID.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_ID",
+        "in_ID"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "2. Transform/Transform_Tratamento_Nome.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "nomes&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_UltimoNome",
+        "out_PrimeiroNome",
+        "in_NomeCompleto"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "2. Transform/Transform_Tratamento_Data.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "datas&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_Data",
+        "in_Data"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "2. Transform/Transform_Tratamento_Pais.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_Pais",
+        "in_Pais"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "3. Load/Load_Abrir_Site.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_Navegador",
+        "in_URL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "3. Load/Load_Entrada_Dados.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_ID",
+        "in_PrimeiroNome",
+        "in_UltimoNome",
+        "in_DataNascimento",
+        "in_DataSolicitacaoCredito",
+        "in_Pais",
+        "in_TipoIdentificacao",
+        "in_AprovacaoCredito",
+        "in_Navegador"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Teste.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "3. Load/Load_Fechar_Site.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Navegador"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
