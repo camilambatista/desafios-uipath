@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1469,688" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1469,1433" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:u="clr-namespace:Utilitarios;assembly=Utilitarios" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -28,6 +28,19 @@
       <x:String>System.Reflection</x:String>
       <x:String>UiPath.Platform.Triggers</x:String>
       <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>Utilitarios</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -60,32 +73,78 @@
       <AssemblyReference>System.IO.Packaging</AssemblyReference>
       <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>Utilitarios</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="564,623" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="564,1368" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:TriggerScope DisplayName="Trigger Scope" sap:VirtualizedContainerService.HintSize="502,512" sap2010:WorkflowViewState.IdRef="TriggerScope_1" SchedulingMode="Sequential">
+    <ui:TriggerScope DisplayName="Trigger Scope" sap:VirtualizedContainerService.HintSize="502,1257" sap2010:WorkflowViewState.IdRef="TriggerScope_1" SchedulingMode="Sequential">
       <ui:TriggerScope.Action>
         <ActivityAction x:TypeArguments="ui:FileChangeTriggerArgs">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:FileChangeTriggerArgs" Name="args" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="450,103" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence sap:VirtualizedContainerService.HintSize="450,828" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="DadosExtraidos" />
+              <Variable x:TypeArguments="x:String" Name="tipoID" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" ContinueOnError="True" DisplayName="Start Process" FileName="[args.FileChangeInfo.FullPath]" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
+            <u:Extrator_de_Identidade DisplayName="Extrator de Identidade" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="Extrator_de_Identidade_1" in_App="applicationframehost.exe" in_Arquivo="[args.FileChangeInfo.Name]" out_DataTable="[DadosExtraidos]" out_TipoID="[tipoID]" />
+            <ui:CloseApplication ContinueOnError="True" DisplayName="Close Application 'janela  Fotos'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
+              <ui:CloseApplication.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dd3e53e2-398d-44e3-851b-61ce9d812b1a" InformativeScreenshot="1eb0be6dfc69f9bfaa96ddf450a85751" Selector="&lt;wnd app='applicationframehost.exe' omit:appid='Microsoft.Windows.Photos_8wekyb3d8bbwe!App' omit:title='ID03.png ‎- Fotos' /&gt;&lt;uia omit:cls='Windows.UI.Core.CoreWindow' omit:name='Fotos' /&gt;" TimeoutMS="1000">
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:CloseApplication.Target>
+            </ui:CloseApplication>
+            <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[Directory.GetCurrentDirectory + &quot;\Arquivados&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="388,159" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[args.FileChangeInfo.FullPath]" />
           </Sequence>
         </ActivityAction>
       </ui:TriggerScope.Action>
       <ui:TriggerScope.Triggers>
         <scg:List x:TypeArguments="Activity" Capacity="4">
-          <ui:FileChangeTriggerV3 IncludeSubdirectories="{x:Null}" ChangeType="Created" DisplayName="File Change Trigger" FileNameFilter="ID*.png" sap:VirtualizedContainerService.HintSize="466,181" sap2010:WorkflowViewState.IdRef="FileChangeTriggerV3_1" NotifyFilters="FileName" Path="C:\Users\Camila Batista\OneDrive\Documentos\4. Estudos\10. UiPath\Desafios\Registro_Identidade\Recebidos" />
+          <ui:FileChangeTriggerV3 IncludeSubdirectories="{x:Null}" ChangeType="Created" DisplayName="File Change Trigger" Enabled="True" FileNameFilter="ID*.png" sap:VirtualizedContainerService.HintSize="466,201" sap2010:WorkflowViewState.IdRef="FileChangeTriggerV3_1" NotifyFilters="FileName" Path="C:\Users\Camila Batista\OneDrive\Documentos\4. Estudos\10. UiPath\Desafios\Registro_Identidade\Recebidos" SchedulingMode="Sequential" TriggerId="6b1bef06-9554-4941-82bf-3bbf9304ab89" />
         </scg:List>
       </ui:TriggerScope.Triggers>
     </ui:TriggerScope>
