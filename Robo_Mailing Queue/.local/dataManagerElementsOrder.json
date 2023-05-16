@@ -1,0 +1,31 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "mensagem&Flowchart_1",
+        "assunto&Flowchart_1",
+        "toEmail&Flowchart_1",
+        "nomeArquivo&Flowchart_1",
+        "caminho&Flowchart_1",
+        "tipoIdentidade&Flowchart_1",
+        "tabelaIdentidade&Flowchart_1",
+        "arquivo&Flowchart_1",
+        "emails&Sequence_1",
+        "senha&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
